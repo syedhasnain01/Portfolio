@@ -1,0 +1,166 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1c1c1c;
+    color: #ffffff;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Navbar */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    background-color: #222;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .logo {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 1em;
+    
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    justify-content: end;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 500;
+    transition: color 0.3s;
+  }
+  
+  .nav-links a:hover {
+    color: #ffd700;
+  }
+  
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+  }
+  
+  /* Hero Section */
+  .hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 0;
+    min-height: 100vh;
+  }
+  
+  .hero-content {
+    max-width: 50%;
+  }
+  
+  .hero-content h1 {
+    font-size: 60px;
+    line-height: 1.2;
+    color: #ffffff;
+  }
+  
+  .hero-content p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin: 20px 0;
+    color: #aaaaaa;
+  }
+  
+  .buttons {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .btn {
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #ffd700;
+    color: #1c1c1c;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+  }
+  
+  .btn:hover {
+    background-color: #ffcc00;
+  }
+  
+  .video-btn {
+    background-color: transparent;
+    border: 2px solid #ffd700;
+    color: #ffd700;
+  }
+  
+  .video-btn:hover {
+    background-color: #ffd700;
+    color: #1c1c1c;
+  }
+  
+  /* Hero Image */
+  .hero-image img {
+    width: 400px;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .hero {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .hero-content {
+      max-width: 100%;
+    }
+  
+    .hero-image {
+      margin-top: 20px;
+    }
+  
+    .hamburger {
+      display: flex;
+    }
+  
+    .nav-links {
+      display: none;
+      flex-direction: column;
+    }
+  }
+  .home{
+    display: flex;
+    h1{
+        margin-left: 120px;
+        width: 700px;
+    }
+  }
+  .h1{
+    margin-bottom: 1em;
+  }
+  
